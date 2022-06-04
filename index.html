@@ -30,8 +30,8 @@
 </head>
 <body class="d-flex flex-column">
     <header class="container-fluid bg-dark"> 
-            <nav class="navbar navbar-expand-lg bg-dark">
-                <div class=" container">
+            <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+                <div class=" container text-center ms-2">
                           <a href="#" class="navbar-brand">LOGO</a>
                 </div>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -47,18 +47,18 @@
                         </a>
                     </li>          
                     <li class="nav-item">
-                      <a href="#" class="nav-link">
+                      <a href="#about" class="nav-link">
                           About
                       </a>
                   </li>  
                   <li class="nav-item">
-                      <a href="#" class="nav-link">
-                          Skills
+                      <a href="#projects" class="nav-link">
+                          Projects
                       </a>
                   </li>  
                   <li class="nav-item">
                       <a href="#" class="nav-link">
-                          Projects
+                          Blogs
                       </a>
                   </li>  
                   <li class="nav-item">
@@ -74,7 +74,7 @@
         
 
     </header>
-    <section class="container-fluid hero-section bg-dark">
+    <section class="container-fluid hero-section bg-dark mt-5">
                     
         <div class="row p-1">
             <div class="col-sm-6 greet bg-dark d-flex flex-column align-items-center justify-content-bottom py-5">
@@ -119,17 +119,51 @@
                             
             </div>
     </section>
-    <section class="row about d-flex">
-         <div class="col-sm-3 bg-info" >
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, laudantium tempora tenetur omnis, ratione nobis quo quaerat reprehenderit cupiditate maiores aliquid natus officiis dolores! Rem fugiat ab saepe voluptate sint quidem nemo ipsum. Officia est, ducimus ullam quas soluta, hic accusantium perspiciatis a ea delectus blanditiis, iusto saepe magni eum amet! Suscipit perspiciatis provident error. Tempore maxime cum commodi sapiente illum iste quos vel doloribus. Facere, similique?
+    <section class="row about d-flex" id="about">
+         <div class="col-sm-6 inform bg-black " >
+                     <div class="text-muted d-flex flex-column justify-content-center align-items-center">
+                         <span class="h3 text-white">
+                             About
+                         </span>
+                         <div class="img">
+                             <img src="./img/project-5.png" alt="profile">
+                         </div>
+                         <div class="cont text-white">
+                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis perspiciatis quae rem aspernatur, praesentium provident doloremque cumque hic sed numquam minus odit aperiam libero dolor odio sequi, ratione modi delectus vel recusandae obcaecati dignissimos. Sint cupiditate numquam labore hic dolorem impedit voluptates soluta quas alias quibusdam!
+                         </div>
+                     </div>
          </div>
-         <div class="col-sm-3">
-                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ut eum tempore, unde quis soluta blanditiis magnam aliquid in voluptatem provident sapiente dicta minus sit hic cum, deserunt velit! Excepturi inventore, illo rem quas enim praesentium. Excepturi facere ullam autem in qui. Iusto, praesentium vitae.
-         </div>
-         <div class="col-sm-6"> 
-                  
+         <div class="col-sm-6 chartCont bg-black d-flex align-items-center jusitfy-content-center"> 
+            <canvas id="myChart"></canvas>
          </div>
 
     </section>
+    <section class="projects bg-dark" style="z-index: -3;" id="projects">
+            <div class="row">
+                <div class="col-sm-12 py-4">
+                    <span class="h4 text-white">
+                        Projects
+                    </span>
+                </div>
+                 <div class="col-sm-12 bg-danger  py-2 my-1">
+                     <span>1</span>
+                 </div>
+                 <div class="col-sm-12 bg-danger  py-2 my-1">
+                    <span>1</span>
+                </div>
+                <div class="col-sm-12 bg-danger  py-2 my-1">
+                    <span>1</span>
+                </div>
+                <div class="col-sm-12 bg-danger  py-2 my-1">
+                    <span>1</span>
+                </div>
+                <div class="col-sm-12 bg-danger  py-2 my-1">
+                    <span>1</span>
+                </div>
+            </div>  
+    </section>
+
+
+    <script src="chart.js"></script>
 </body>
 </html>
