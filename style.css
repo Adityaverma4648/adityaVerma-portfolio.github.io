@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.burger-icon {
+  height: 21px;
+}
+
+.nav-item {
+  margin: 0px 2px;
+  padding: 2px 5px;
+  font-weight: 500;
+  font-size: large;
+}
+
+.navbar-brand {
+  color: #cf9bff;
+}
+
+.nav-link {
+  color: #cf9bff;
+}
+
+.active {
+  color: #6767ff;
+}
+
+.hero-section {
+  background-image: url("#");
+}
+
+.hero-section div {
+  height: 50vh;
+}
+
+.hero-section div .greet {
+  padding: 200px 0px;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.hero-section div .greet .greet-opener {
+  background-color: #c886e5;
+  -webkit-animation: shake 1s ease-out infinite alternate;
+          animation: shake 1s ease-out infinite alternate;
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  25% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  50% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  100% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  25% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  50% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  100% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+}
+
+.hero-section div .greet::after {
+  height: 100%;
+  width: 100%;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  background: inherit;
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
+  z-index: -1;
+}
+
+.hero-section div .illustrate {
+  padding: 200px 0px;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.hero-section div .illustrate::after {
+  height: 100%;
+  width: 100%;
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+  background: inherit;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  z-index: -1;
+}
+
+.prof li {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-cont {
+  max-height: 10%;
+}
+
+.icon-cont a img {
+  height: 35px;
+}
+
+.about {
+  position: relative;
+}
+
+.about div {
+  padding: 200px 0px;
+}
+/*# sourceMappingURL=style.css.map */
