@@ -10,6 +10,10 @@ body {
   max-width: 100vw;
 }
 
+nav {
+  max-width: 100vw;
+}
+
 .burger-icon {
   height: 21px;
 }
@@ -34,7 +38,7 @@ body {
 }
 
 .hero-section {
-  background-image: url("#");
+  min-width: 100vw;
 }
 
 .hero-section div {
@@ -131,6 +135,10 @@ body {
   z-index: -1;
 }
 
+.prof {
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+
 .prof li {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -152,7 +160,7 @@ body {
 .about .inform {
   padding: 100px 0px;
   position: relative;
-  z-index: -2;
+  z-index: -1;
   overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,7 +193,7 @@ body {
   background: inherit;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
-  z-index: -3;
+  z-index: -2;
 }
 
 .about .chartCont {
@@ -207,15 +215,35 @@ body {
   background: inherit;
   -webkit-transform: skewY(3deg);
           transform: skewY(3deg);
-  z-index: -3;
+  z-index: -2;
 }
 
-#chart {
-  height: 35vh;
-  width: auto;
+#mycanvas {
+  background-color: yellow;
+}
+
+#mycanvas ul li {
+  color: #fff;
 }
 
 .projects {
-  padding: 200px 0px;
+  z-index: 1;
+  padding: 100px 0px;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.projects .colOfGrid {
+  background: #ff00cc;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#9000b8), to(#830069));
+  background: linear-gradient(to right, #9000b8, #830069);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.github-link {
+  z-index: 100;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

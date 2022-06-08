@@ -85,7 +85,7 @@
                       <span class="h3 text-white" >
                           I'm currently a student, learning
                       </span>
-                      <ul class="prof">
+                      <ul class="prof px-3">
                           <li class="h5 py-2">
                                 Web Developement
                           </li>
@@ -122,9 +122,9 @@
     <section class="row about d-flex" id="about">
          <div class="col-sm-6 inform bg-black " >
                      <div class="text-muted d-flex flex-column justify-content-center align-items-center">
-                         <span class="h3 text-white">
+                         <div class="border-start px-4 border-info h3 text-white container">
                              About
-                         </span>
+                         </div>
                          <div class="img">
                              <img src="./img/project-5.png" alt="profile">
                          </div>
@@ -134,36 +134,139 @@
                      </div>
          </div>
          <div class="col-sm-6 chartCont bg-black d-flex align-items-center jusitfy-content-center"> 
-            <canvas id="myChart"></canvas>
+            <div class="skills-charts">
+                <div id="myCanvasContainer">
+                    <canvas width="500" height="500" id="myCanvas">
+                        <ul>
+                            <li> <a data-weight="25" href="#" target="_blank">HTML</a></li>
+
+                            <li><a data-weight="25" href="#" target="_blank">CSS</a></li>
+
+                            <li><a data-weight="25" href="#" target="_blank">ES5/ES6</a></li>
+                            
+                            <li><a data-weight="25" href="#" target="_blank">TypeScript</a>
+                            </li>
+                            
+                            <li><a data-weight="24" href="#" target="_blank">REST</a></li>
+                            
+                            <li><a data-weight="14" href="#" target="_blank">JSON</a></li>
+
+                            <li><a data-weight="13" href="#" target="_blank">GSAP</a></li>
+
+                            <li><a data-weight="14" href="#" target="_blank">Data Science</a></li>
+                            
+                            <li><a data-weight="26" href="#" target="_blank">Wordpress</a></li>
+
+                            <li><a data-weight="26" href="#" target="_blank">PHP</a></li>
+
+                            <li><a data-weight="26" href="/#" target="_blank">Python</a></li>
+
+                            <li><a data-weight="21" href="#" target="_blank">Node JS</a></li>
+                            
+                            <li><a data-weight="17" href="#" target="_blank">Git</a></li>
+
+                            <li><a data-weight="17" href="#" target="_blank">_lodash</a></li>
+                            
+                            
+                            <li><a data-weight="23" href="#" target="_blank">Bootstrap</a></li>
+                            
+                            <li><a data-weight="15" href="#" target="_blank">SASS</a></li>
+                            
+                            <li><a data-weight="24" href="#" target="_blank">ReactJS</a></li>
+                            
+                            <li><a data-weight="12" href="#" target="_blank">jQuery</a></li>
+                            
+                            <li><a data-weight="26" href="#" target="_blank">SQl</a></li>
+                            
+                            <li><a data-weight="19" href="#" target="_blank">Gulp</a></li>
+                            
+                            <li><a data-weight="19" href="#" target="_blank">npm</a></li>
+                            
+                            <li><a data-weight="19" href="#" target="_blank">BEM</a></li>
+                        
+                        </ul>
+                        
+                    </canvas>
+                        
+                    </div>
+                            
+                        <div class="clear"></div>
+                        
+                        </div>
          </div>
 
     </section>
-    <section class="projects bg-dark" style="z-index: -3;" id="projects">
+    <section class="projects bg-dark" id="projects">
             <div class="row">
                 <div class="col-sm-12 py-4">
-                    <span class="h4 text-white">
+                    <div class="border-start border-info h4 container text-white">
                         Projects
-                    </span>
+                    </div>
                 </div>
-                 <div class="col-sm-12 bg-danger  py-2 my-1">
-                     <span>1</span>
+                <div class="col-sm-12 py-2 my-1 ">
+                 <div class="container-fluid d-flex align-items-center justify-content-center row py-2 colOfGrid">
+                           <div class="col-sm-3 mx-1 d-flex flex-column bg-dark p-2 landing-page">
+                              <!-- <a href=> -->
+                                <span class="text-center h5 text-warning">
+                                    LandingPage - Ecommerce Site
+                                </span>
+                                <span class="proj_desc text-muted text-center py-3">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut recusandae non animi repudiandae.
+                                    .....
+                                </span>
+                                <span class="text-white text-center">
+                                    Technology : <span class="text-info"> Frontend</span> using React Js
+                                </span>
+                                <a href="https://github.com/buttkicker3124/First-React-Project" class="github-link text-center text-success py-4">Github Link</a>
+                              <!-- </a> -->
+                           </div>
+                           <div class="col-sm-3 mx-1 d-flex flex-column bg-dark p-2 Complete-form">
+                            <!-- <a href=> -->
+                              <span class="text-center h5 text-warning">
+                                  Complete Form
+                              </span>
+                              <span class="proj_desc text-muted text-center py-3">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut recusandae non animi repudiandae.
+                                  .....
+                              </span>
+                              <span class="text-white text-center">
+                                  Technology : <span class="text-info"> Frontend + backend</span> using PHP, SCSS
+                              </span>
+                              <a href="https://github.com/buttkicker3124/Complete_Form" class="github-link text-center text-success py-4">Github Link</a>
+                            <!-- </a> -->
+                         </div>
+                         <div class="col-sm-3 mx-1 d-flex flex-column bg-dark p-2 stud-dashboard">
+                            <!-- <a href=> -->
+                              <span class="text-center h5 text-warning">
+                                  Student Personal Dashboard
+                              </span>
+                              <span class="proj_desc text-muted text-center py-3">
+                                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut recusandae non animi repudiandae.
+                                  .....
+                              </span>
+                              <span class="text-white text-center">
+                                  Technology : <span class="text-info"> Frontend + backend</span> using PHP, SCSS, BOOTSRAP
+                              </span>
+                              <a href="https://github.com/buttkicker3124/Students-personal-dashboard" class="github-link text-center text-success py-3">Github Link</a>
+                            <!-- </a> -->
+                         </div>
                  </div>
-                 <div class="col-sm-12 bg-danger  py-2 my-1">
+                 <div class="col-sm-12 bg-danger  py-2 my-1 colOfGrid">
                     <span>2</span>
                 </div>
-                <div class="col-sm-12 bg-danger  py-2 my-1">
+                <div class="col-sm-12 bg-danger  py-2 my-1 colOfGrid">
                     <span>3</span>
                 </div>
-                <div class="col-sm-12 bg-danger  py-2 my-1">
+                <div class="col-sm-12 bg-danger  py-2 my-1 colOfGrid">
                     <span>4</span>
                 </div>
-                <div class="col-sm-12 bg-danger  py-2 my-1">
+                <div class="col-sm-12 bg-danger  py-2 my-1 colOfGrid">
                     <span>5</span>
                 </div>
             </div>  
     </section>
 
 
-    <script src="chart.js"></script>
+    <!-- <script src="chart.js"></script> -->
 </body>
 </html>
