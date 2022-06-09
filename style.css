@@ -181,8 +181,13 @@ nav {
   width: 100%;
 }
 
+.about .inform div .about-head {
+  width: 35%;
+}
+
 .about .inform div .cont {
   z-index: 100;
+  width: 100%;
 }
 
 .about .inform div .img img {
@@ -311,43 +316,169 @@ nav {
 }
 
 .chartCont .skills-charts {
+  max-height: 100vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.chartCont .skills-charts h2 {
   position: relative;
-}
-
-.chartCont .skills-charts ul {
-  height: 90%;
-  width: 90%;
-  background-color: #c886e5;
-  list-style: none;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
-.chartCont .skills-charts ul li {
-  padding: 2rem;
+.chartCont .skills-charts .skill-head {
+  position: relative;
+  pointer-events: none;
+  font-size: 45px;
 }
 
-.chartCont .skills-charts ul li span {
-  position: absolute;
+.row-icon {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 0px;
+  white-space: nowrap;
+  font-size: 64px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.row-icon i {
+  color: rgba(71, 71, 71, 0.466);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  padding: 0px 5px;
+  cursor: default;
+}
+
+.row-icon i:hover {
+  color: #53fffc;
+  text-shadow: #53fffc;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.row-icon div {
+  font-size: 1em;
+  white-space: nowrap;
+  -webkit-animation: animate 80s linear infinite;
+          animation: animate 80s linear infinite;
+  -webkit-animation-delay: -80s;
+          animation-delay: -80s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.row-icon div:nth-child(2) {
+  -webkit-animation: animate2 80s linear infinite;
+          animation: animate2 80s linear infinite;
+  -webkit-animation-delay: -40s;
+          animation-delay: -40s;
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+
+.row-icon:nth-child(even) div {
+  font-size: 1em;
+  white-space: nowrap;
+  -webkit-animation: animate3 80s linear infinite;
+          animation: animate3 80s linear infinite;
+  -webkit-animation-delay: -80s;
+          animation-delay: -80s;
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.row-icon:nth-child(even) div:nth-child(2) {
+  -webkit-animation: animate4 80s linear infinite;
+          animation: animate4 80s linear infinite;
+  -webkit-animation-delay: -40s;
+          animation-delay: -40s;
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
