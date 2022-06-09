@@ -48,8 +48,12 @@ nav {
 .hero-section div .greet {
   padding: 200px 0px;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   overflow: visible;
+}
+
+.hero-section div .greet div, .hero-section div .greet span {
+  z-index: 99;
 }
 
 .hero-section div .greet .greet-opener {
@@ -110,13 +114,13 @@ nav {
   background: inherit;
   -webkit-transform: skewY(3deg);
           transform: skewY(3deg);
-  z-index: -1;
+  z-index: 9;
 }
 
 .hero-section div .illustrate {
   padding: 200px 0px;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   overflow: visible;
 }
 
@@ -132,7 +136,7 @@ nav {
   background: inherit;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
-  z-index: -1;
+  z-index: 9;
 }
 
 .prof {
@@ -154,13 +158,12 @@ nav {
 .about {
   max-width: 100vw;
   position: relative;
-  z-index: -1;
 }
 
 .about .inform {
   padding: 100px 0px;
   position: relative;
-  z-index: -1;
+  z-index: 8;
   overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,11 +177,24 @@ nav {
 }
 
 .about .inform div {
-  width: 80%;
+  z-index: 99;
+  width: 100%;
+}
+
+.about .inform div .cont {
+  z-index: 100;
 }
 
 .about .inform div .img img {
   height: 500px;
+}
+
+.about .inform div div .img {
+  height: 30px;
+}
+
+.about .inform div div .img img {
+  height: 25px;
 }
 
 .about .inform::after {
@@ -193,14 +209,18 @@ nav {
   background: inherit;
   -webkit-transform: skewY(-3deg);
           transform: skewY(-3deg);
-  z-index: -2;
+  z-index: 7;
 }
 
 .about .chartCont {
   padding: 50px 0px;
   position: relative;
-  z-index: -2;
+  z-index: 8;
   overflow: visible;
+}
+
+.about .chartCont div {
+  z-index: 99;
 }
 
 .about .chartCont::after {
@@ -215,7 +235,7 @@ nav {
   background: inherit;
   -webkit-transform: skewY(3deg);
           transform: skewY(3deg);
-  z-index: -2;
+  z-index: 7;
 }
 
 #mycanvas {
@@ -245,5 +265,89 @@ nav {
 .github-link {
   z-index: 100;
   cursor: pointer;
+}
+
+#CollegeMessage {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.text-green {
+  color: #00ff62;
+}
+
+.color-primary {
+  color: #6699ff;
+}
+
+.text-purple {
+  color: #db59ff;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.button-container, #info-cont {
+  list-style: none;
+}
+
+.text-yellow {
+  color: #f9ff8f;
+}
+
+.chartCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chartCont .skills-charts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chartCont .skills-charts h2 {
+  position: relative;
+}
+
+.chartCont .skills-charts ul {
+  height: 90%;
+  width: 90%;
+  background-color: #c886e5;
+  list-style: none;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chartCont .skills-charts ul li {
+  padding: 2rem;
+}
+
+.chartCont .skills-charts ul li span {
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

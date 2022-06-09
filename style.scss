@@ -36,6 +36,7 @@ nav{
 
 .hero-section{
 //    background-image: url('#');
+
    min-width: 100vw;
     div{
         height: 50vh;
@@ -43,8 +44,11 @@ nav{
         .greet{
             padding: 200px 0px;
             position: relative;
-            z-index: 1;
+            z-index: 10;
             overflow: visible;
+            div , span{
+                   z-index: 99;
+            }
                .greet-opener{
                    background-color: #c886e5;
                    animation: shake 1s ease-out infinite alternate;
@@ -78,13 +82,13 @@ nav{
             transform-origin: left bottom;
             background: inherit;
             transform: skewY(3deg);
-            z-index: -1;
+            z-index: 9;
         }
 
     .illustrate{
         padding: 200px 0px;
         position: relative;
-        z-index: 1;
+        z-index: 10;
         overflow: visible;
     }
     .illustrate::after{
@@ -97,10 +101,11 @@ nav{
         transform-origin: right bottom;
         background: inherit;
         transform: skewY(-3deg);
-        z-index: -1;
+        z-index: 9;
     } 
   }
 }
+
 .prof{
 
     border-left: 2px solid rgba(255,255,255,0.3);
@@ -119,22 +124,37 @@ nav{
 .about{
     max-width: 100vw;
     position: relative;
-    z-index: -1;
+    // z-index: 8;
       .inform{
         padding: 100px 0px;
         position: relative;
-        z-index:-1;
+        z-index: 8;
         overflow: visible;
         display: flex;
         align-items: center;
         justify-content: center;
           div{
-              width: 80%;
+              z-index: 99;
+              width: 100%;
+              .cont{
+                z-index: 100;
+            }
               .img{
                   img{
                     height: 500px;
                   }
             }
+            
+          }
+          div{
+               div{
+                   .img{
+                       height: 30px;
+                       img{
+                           height: 25px;
+                       }
+                   }
+               }
           }
         
       }
@@ -149,7 +169,7 @@ nav{
         transform-origin: right bottom;
         background: inherit;
         transform: skewY(-3deg);
-        z-index: -2;
+        z-index: 7;
       }
 
 
@@ -157,9 +177,12 @@ nav{
         // eet{
             padding: 50px 0px;
             position: relative;
-            z-index: -2;
+            z-index: 8;
             overflow: visible;
             // background-color: aqua;
+            div{
+                z-index: 99;
+            }
       }
       .chartCont::after{
         height: 100%;
@@ -171,7 +194,7 @@ nav{
         transform-origin: left bottom;
         background: inherit;
         transform: skewY(3deg);
-        z-index: -2;
+        z-index: 7;
     }
 
 }
@@ -198,4 +221,63 @@ nav{
 .github-link{
     z-index: 100;
    cursor: pointer;
+}
+#CollegeMessage{
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.text-green{
+    color: rgb(0, 255, 98);
+}
+.color-primary{
+    color: rgb(102, 153, 255);
+}
+.text-purple{
+    color: #db59ff;
+}
+.text-orange{
+    color: orange;
+}
+.button-container,#info-cont{
+      list-style: none;
+}
+.text-yellow{
+    color: rgb(249, 255, 143);
+}
+
+
+
+
+
+.chartCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+  .skills-charts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        position: relative;
+    }
+    ul{
+        height: 90%;
+        width: 90%;
+        background-color: #c886e5;
+        list-style: none;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{ 
+            padding: 2rem;
+              span{
+                  position: absolute;
+              }
+        }
+    }
+  }
 }
