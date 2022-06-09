@@ -14,3 +14,7 @@ function tooltipCollege(){
 function tooltipCollegeMouseOut(){
   CollegeMessage.style.display = "none";
 }
+
+var webDev = document.getElementById('web_developement');
+var ui_ux = document.getElementById('ui_ux'); 
+var graphic_design = document.getElementById('graphic_design'); 

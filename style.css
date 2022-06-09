@@ -143,10 +143,6 @@ nav {
   border-left: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.prof li {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .icon-cont {
   max-height: 10%;
 }
@@ -188,6 +184,12 @@ nav {
 .about .inform div .cont {
   z-index: 100;
   width: 100%;
+}
+
+.about .inform div .img {
+  min-height: 500px;
+  width: 50%;
+  background-color: #ffffff;
 }
 
 .about .inform div .img img {
@@ -340,7 +342,7 @@ nav {
   width: 100%;
   height: 100vh;
   pointer-events: none;
-  font-size: 105px;
+  font-size: 75px;
   z-index: 88;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,5 +496,43 @@ nav {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
+}
+
+.navigator div {
+  cursor: pointer;
+}
+
+#ui_ux {
+  background: #000046;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#1CB5E0), to(#000046));
+  background: linear-gradient(to right, #1CB5E0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#ui_ux div {
+  background: none;
+}
+
+#ui_ux div div {
+  background: none;
+}
+
+#graphic_design {
+  background: #c31432;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#240b36), to(#c31432));
+  background: linear-gradient(to right, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#graphic_design div {
+  background: none;
+}
+
+.footer {
+  padding: 100px 0px;
 }
 /*# sourceMappingURL=style.css.map */
