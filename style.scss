@@ -398,9 +398,6 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
        }
     
 }
-// #ui_ux{
-//     position: relative;
-// }
 #graphic_design{
     // position: relative;
     background: #c31432;  /* fallback for old browsers */
@@ -417,6 +414,8 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
 .footer{
     padding: 100px 0px;
 }
+// hero-section ends here--------------------------------------------------------------
+
 
 
 
@@ -467,4 +466,43 @@ background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, F
             }
         }
      }
+}
+// --------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// view projects page------------------------------------
+view-cont{
+    height: 100vh;
+    width: 100vw;
+    .heading-cont{
+        margin-top: 100px;
+    }
+       
+
+}
+
+
+// ----------------------------------------------------
+#web-dev-blog{
+    min-height: 100vh;
+    width: 100vw;
+
+     .heading-cont-blog{
+               background-color: yellow;
+     }       
 }
